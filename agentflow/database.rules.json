@@ -1,0 +1,44 @@
+{
+  "rules": {
+    "agents": {
+      "$agentId": {
+        "inbox": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        },
+        "outbox": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        },
+        "heartbeat": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        }
+      }
+    },
+    "projects": {
+      "$projectId": {
+        "sharedMemory": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        },
+        "activity": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        },
+        "presence": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+        }
+      }
+    },
+    "users": {
+      "$userId": {
+        "notifications": {
+          ".read": "auth != null && auth.uid == $userId",
+          ".write": "auth != null"
+        }
+      }
+    }
+  }
+}

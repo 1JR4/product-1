@@ -1,0 +1,848 @@
+
+> agentflow@1.0.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.72:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 851ms
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+
+warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+warn - Configure your content sources or your generated CSS will be missing styles.
+warn - https://tailwindcss.com/docs/content-configuration
+ ✓ Compiled / in 3.6s
+ ⨯ ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/wjr/Documents/testrun-2/agentflow/src/app/globals.css:1:1: The `border-border` class does not exist. If `border-border` is a custom class, make sure it is defined within a `@layer` directive.
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:109:16)]
+    [at AtRule.error (turbopack:///[project]/node_modules/postcss/lib/node.js:145:32)]
+    [at processApply (/Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/lib/expandApplyAtRules.js:380:29)]
+    [at /Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/lib/expandApplyAtRules.js:551:9]
+    [at /Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/processTailwindFeatures.js:55:50]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async plugins (/Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/plugin.js:38:17)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:261:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  ./src/app/globals.css [Client Component Browser]
+  ./src/app/layout.tsx [Server Component]
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1324ms
+ GET / 500 in 5179ms
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⨯ ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/wjr/Documents/testrun-2/agentflow/src/app/globals.css:1:1: The `border-border` class does not exist. If `border-border` is a custom class, make sure it is defined within a `@layer` directive.
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:109:16)]
+    [at AtRule.error (turbopack:///[project]/node_modules/postcss/lib/node.js:145:32)]
+    [at processApply (/Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/lib/expandApplyAtRules.js:380:29)]
+    [at /Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/lib/expandApplyAtRules.js:551:9]
+    [at /Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/processTailwindFeatures.js:55:50]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async plugins (/Users/wjr/Documents/testrun-2/agentflow/node_modules/tailwindcss/lib/plugin.js:38:17)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:261:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  ./src/app/globals.css [Client Component Browser]
+  ./src/app/layout.tsx [Server Component]
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ GET / 500 in 52ms
+ ⚠ Cross origin request detected from 192.168.1.72 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ✓ Compiled /favicon.ico in 324ms
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ GET /favicon.ico 500 in 352ms
+ ✓ Compiled in 1077ms
+ ✓ Compiled / in 21ms
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+React does not recognize the `suppressHydrationWarnings` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `suppresshydrationwarnings` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+ GET / 200 in 576ms
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_e531dabc.module.css
+next/font: warning:
+Failed to download `Geist` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_e531dabc.module.css
+  [next]/internal/font/google/geist_e531dabc.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/geist_mono_68a01160.module.css
+next/font: warning:
+Failed to download `Geist Mono` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/geist_mono_68a01160.module.css
+  [next]/internal/font/google/geist_mono_68a01160.js
+  ./src/app/layout.tsx
+
+
+ ✓ Compiled / in 45ms
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⨯ ReferenceError: geistSans is not defined
+    at RootLayout (src/app/layout.tsx:27:22)
+  25 |     <html lang="en" suppressHydrationWarnings>
+  26 |       <body
+> 27 |         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+     |                      ^
+  28 |       >
+  29 |         <div className="flex h-screen bg-background">
+  30 |           <AppSidebar /> {
+  digest: '1568651824'
+}
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⨯ ReferenceError: geistSans is not defined
+    at RootLayout (src/app/layout.tsx:27:22)
+  25 |     <html lang="en" suppressHydrationWarnings>
+  26 |       <body
+> 27 |         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+     |                      ^
+  28 |       >
+  29 |         <div className="flex h-screen bg-background">
+  30 |           <AppSidebar /> {
+  digest: '1568651824'
+}
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⨯ ReferenceError: geistSans is not defined
+    at RootLayout (src/app/layout.tsx:27:22)
+  25 |     <html lang="en" suppressHydrationWarnings>
+  26 |       <body
+> 27 |         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+     |                      ^
+  28 |       >
+  29 |         <div className="flex h-screen bg-background">
+  30 |           <AppSidebar /> {
+  digest: '1568651824'
+}
+ GET / 500 in 417ms
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled / in 23ms
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ GET / 200 in 356ms
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+Error while requesting resource
+Received response with status 404 when requesting https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ⚠ [next]/internal/font/google/inter_b625b40b.module.css
+next/font: warning:
+Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Import trace:
+  [next]/internal/font/google/inter_b625b40b.module.css
+  [next]/internal/font/google/inter_b625b40b.js
+  ./src/app/layout.tsx
+
+
+ ✓ Compiled / in 34ms
+ GET / 200 in 59ms
+ GET / 200 in 565ms
+ ✓ Compiled in 105ms
+ ✓ Compiled / in 19ms
+ GET / 200 in 159ms
+ GET / 200 in 194ms
+ GET / 200 in 171ms
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 511ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ GET /projects 200 in 655ms
+ GET / 200 in 326ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ GET /projects 200 in 182ms
+ GET / 200 in 150ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ GET /projects 200 in 87ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at ProjectCard (src/components/projects/project-card.tsx:73:33)
+  71 |                 <span className="ml-1 capitalize">{project.status}</span>
+  72 |               </Badge>
+> 73 |               {project.techStack.length > 0 && (
+     |                                 ^
+  74 |                 <Badge variant="outline">
+  75 |                   {project.techStack[0]}
+  76 |                   {project.techStack.length > 1 && ` +${project.techStack.length - 1}`} {
+  digest: '4145216270'
+}
+ GET /projects 500 in 150ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 353ms
+ ✓ Compiled in 136ms
+ GET / 200 in 212ms
+ ✓ Compiled in 143ms
+ GET / 200 in 115ms
+ ✓ Compiled /projects in 27ms
+ ✓ Compiled in 124ms
+ GET /projects 200 in 455ms
+ ✓ Compiled /projects in 31ms
+ GET /projects 200 in 348ms
+ ✓ Compiled /projects/[projectId] in 459ms
+ GET /projects/1 200 in 1237ms
+ ○ Compiling /projects/[projectId]/agents ...
+ ✓ Compiled /projects/[projectId]/agents in 533ms
+ GET /projects/1/agents 200 in 1130ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 150ms
+ GET /projects/1 200 in 397ms
+ GET /projects/1/agents 200 in 278ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 150ms
+ ⨯ ReferenceError: TrendingUp is not defined
+    at eval (src/app/projects/[projectId]/agents/page.tsx:269:23)
+    at Array.map (<anonymous>)
+    at AgentsPage (src/app/projects/[projectId]/agents/page.tsx:202:22)
+  267 |                   <div>
+  268 |                     <div className="flex items-center gap-1 text-muted-foreground">
+> 269 |                       <TrendingUp className="h-3 w-3" />
+      |                       ^
+  270 |                       Success Rate
+  271 |                     </div>
+  272 |                     <div className="font-medium">{agent.stats.successRate}%</div> {
+  digest: '2045704234'
+}
+ GET /projects/1/agents 500 in 594ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 171ms
+ GET /projects/1/agents 200 in 465ms
+ GET /projects/1/agents 200 in 221ms
+ ✓ Compiled /projects/[projectId]/features in 355ms
+ GET /projects/1/features 200 in 893ms
