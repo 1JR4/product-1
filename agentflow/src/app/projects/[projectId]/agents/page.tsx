@@ -3,22 +3,16 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { 
   Users, 
   Plus, 
-  Settings, 
   Activity, 
   Clock, 
-  Cpu,
-  MessageSquare,
-  Play,
-  Pause,
-  Square,
-  MoreVertical,
   TrendingUp
 } from "lucide-react";
 import { useParams } from "next/navigation";
+import { AgentCard } from "@/components/agents/agent-card";
 
 // Mock data - replace with Firebase integration
 const mockAgents = [
@@ -135,6 +129,37 @@ export default function AgentsPage() {
   const activeAgents = mockAgents.filter(agent => agent.status === "active" || agent.status === "busy");
   const idleAgents = mockAgents.filter(agent => agent.status === "idle");
 
+  // Agent action handlers
+  const handleStartAgent = (agentId: string) => {
+    console.log(`Starting agent ${agentId}`);
+    // TODO: Implement start agent logic
+    alert(`Starting agent ${agentId}`);
+  };
+
+  const handlePauseAgent = (agentId: string) => {
+    console.log(`Pausing agent ${agentId}`);
+    // TODO: Implement pause agent logic
+    alert(`Pausing agent ${agentId}`);
+  };
+
+  const handleStopAgent = (agentId: string) => {
+    console.log(`Stopping agent ${agentId}`);
+    // TODO: Implement stop agent logic
+    alert(`Stopping agent ${agentId}`);
+  };
+
+  const handleMessageAgent = (agentId: string) => {
+    console.log(`Opening chat with agent ${agentId}`);
+    // TODO: Implement chat functionality
+    alert(`Opening chat with agent ${agentId}`);
+  };
+
+  const handleConfigureAgent = (agentId: string) => {
+    console.log(`Configuring agent ${agentId}`);
+    // TODO: Implement configure functionality
+    alert(`Configuring agent ${agentId}`);
+  };
+
   return (
     <div className="p-6 space-y-6">
       {/* Header */}
@@ -201,120 +226,15 @@ export default function AgentsPage() {
         <h2 className="text-xl font-semibold">Active Agents</h2>
         <div className="grid gap-6 md:grid-cols-2">
           {mockAgents.map((agent) => (
-            <Card key={agent.id} className="relative">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="relative">
-                      <Avatar>
-                        <AvatarFallback>
-                          {agent.name.split(' ').map(n => n[0]).join('')}
-                        </AvatarFallback>
-                      </Avatar>
-                      <div 
-                        className={`absolute -bottom-1 -right-1 h-3 w-3 rounded-full border-2 border-background ${getStatusColor(agent.status)}`}
-                      />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">{agent.name}</h3>
-                      <div className="flex items-center gap-2">
-                        <Badge variant="outline" className={getTypeColor(agent.type)}>
-                          {agent.type}
-                        </Badge>
-                        <Badge variant="outline" className="capitalize">
-                          {agent.role.replace('-', ' ')}
-                        </Badge>
-                      </div>
-                    </div>
-                  </div>
-                  <Button variant="ghost" size="sm">
-                    <MoreVertical className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardHeader>
-              
-              <CardContent className="space-y-4">
-                {/* Current Task */}
-                <div>
-                  <h4 className="text-sm font-medium mb-1">Current Task</h4>
-                  <p className="text-sm text-muted-foreground">
-                    {agent.currentTask}
-                  </p>
-                </div>
-
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <div className="flex items-center gap-1 text-muted-foreground">
-                      <Activity className="h-3 w-3" />
-                      Tasks Completed
-                    </div>
-                    <div className="font-medium">{agent.stats.tasksCompleted}</div>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1 text-muted-foreground">
-                      <Clock className="h-3 w-3" />
-                      Uptime
-                    </div>
-                    <div className="font-medium">{agent.stats.uptime}</div>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1 text-muted-foreground">
-                      <Cpu className="h-3 w-3" />
-                      Tokens Used
-                    </div>
-                    <div className="font-medium">{agent.stats.tokensUsed.toLocaleString()}</div>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1 text-muted-foreground">
-                      <TrendingUp className="h-3 w-3" />
-                      Success Rate
-                    </div>
-                    <div className="font-medium">{agent.stats.successRate}%</div>
-                  </div>
-                </div>
-
-                {/* Capabilities */}
-                <div>
-                  <h4 className="text-sm font-medium mb-2">Capabilities</h4>
-                  <div className="flex flex-wrap gap-1">
-                    {agent.capabilities && agent.capabilities.slice(0, 3).map((capability) => (
-                      <Badge key={capability} variant="secondary" className="text-xs">
-                        {capability}
-                      </Badge>
-                    ))}
-                    {agent.capabilities && agent.capabilities.length > 3 && (
-                      <Badge variant="secondary" className="text-xs">
-                        +{agent.capabilities.length - 3} more
-                      </Badge>
-                    )}
-                  </div>
-                </div>
-
-                {/* Actions */}
-                <div className="flex items-center gap-2 pt-2">
-                  <Button variant="outline" size="sm">
-                    <MessageSquare className="h-3 w-3 mr-1" />
-                    Chat
-                  </Button>
-                  <Button variant="outline" size="sm">
-                    <Settings className="h-3 w-3 mr-1" />
-                    Configure
-                  </Button>
-                  {agent.status === "active" ? (
-                    <Button variant="outline" size="sm">
-                      <Pause className="h-3 w-3 mr-1" />
-                      Pause
-                    </Button>
-                  ) : (
-                    <Button variant="outline" size="sm">
-                      <Play className="h-3 w-3 mr-1" />
-                      Resume
-                    </Button>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
+            <AgentCard
+              key={agent.id}
+              agent={agent}
+              onStart={() => handleStartAgent(agent.id)}
+              onPause={() => handlePauseAgent(agent.id)}
+              onStop={() => handleStopAgent(agent.id)}
+              onMessage={() => handleMessageAgent(agent.id)}
+              onConfigure={() => handleConfigureAgent(agent.id)}
+            />
           ))}
         </div>
       </div>

@@ -867,3 +867,43 @@ Import trace:
  GET /projects/1/agents 200 in 605ms
  ✓ Compiled /projects/[projectId]/features in 42ms
  GET /projects/1/features 200 in 252ms
+ ✓ Compiled /projects in 35ms
+ GET /projects 200 in 383ms
+ GET /projects/1/agents 200 in 77ms
+ GET /projects/1/agents 200 in 248ms
+ ✓ Compiled in 182ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 170ms
+ ⨯ ReferenceError: Avatar is not defined
+    at eval (src/app/projects/[projectId]/agents/page.tsx:233:23)
+    at Array.map (<anonymous>)
+    at AgentsPage (src/app/projects/[projectId]/agents/page.tsx:227:22)
+  231 |                   <div className="flex items-center gap-3">
+  232 |                     <div className="relative">
+> 233 |                       <Avatar>
+      |                       ^
+  234 |                         <AvatarFallback>
+  235 |                           {agent.name.split(' ').map(n => n[0]).join('')}
+  236 |                         </AvatarFallback> {
+  digest: '2210215527'
+}
+ GET /projects/1/agents 500 in 474ms
+ ✓ Compiled in 299ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Avatar is not defined
+    at eval (src/app/projects/[projectId]/agents/page.tsx:257:21)
+    at Array.map (<anonymous>)
+    at AgentsPage (src/app/projects/[projectId]/agents/page.tsx:254:15)
+  255 |                 <div key={manager.id} className="space-y-2">
+  256 |                   <div className="flex items-center gap-3 p-3 bg-muted rounded-lg">
+> 257 |                     <Avatar className="h-8 w-8">
+      |                     ^
+  258 |                       <AvatarFallback className="text-xs">
+  259 |                         {manager.name.split(' ').map(n => n[0]).join('')}
+  260 |                       </AvatarFallback> {
+  digest: '663843544'
+}
+ GET /projects/1/agents 500 in 518ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 186ms
+ GET /projects/1/agents 200 in 510ms
