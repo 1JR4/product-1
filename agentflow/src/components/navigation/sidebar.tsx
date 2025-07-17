@@ -15,6 +15,7 @@ import {
   Workflow,
   Activity
 } from "lucide-react"
+import { SimpleThemeToggle } from "@/components/theme-toggle"
 
 const navigation = [
   {
@@ -95,7 +96,7 @@ export function AppSidebar() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="p-4">
+      <div className="p-4 space-y-2">
         {bottomNavigation.map((item) => {
           const isActive = pathname === item.href
           return (
@@ -112,6 +113,12 @@ export function AppSidebar() {
             </Button>
           )
         })}
+        
+        {/* Theme Toggle */}
+        <div className="flex items-center justify-between pt-2">
+          <span className="text-sm text-muted-foreground">Theme</span>
+          <SimpleThemeToggle />
+        </div>
       </div>
     </div>
   )

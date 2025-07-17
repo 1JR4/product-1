@@ -846,3 +846,24 @@ Import trace:
  GET /projects/1/agents 200 in 221ms
  ✓ Compiled /projects/[projectId]/features in 355ms
  GET /projects/1/features 200 in 893ms
+ ✓ Compiled /projects/[projectId]/progress in 387ms
+ GET /projects/1/progress 200 in 1190ms
+ GET /projects/1/agents 200 in 57ms
+ GET /projects/1/agents 200 in 634ms
+ ✓ Compiled in 1080ms
+ ✓ Compiled in 204ms
+ ✓ Compiled /projects/[projectId]/agents in 37ms
+ GET /projects/1/agents 200 in 294ms
+ GET /projects/1/agents 200 in 124ms
+ GET /projects/1/agents 200 in 95ms
+ GET /projects/1/agents 200 in 69ms
+ GET /projects/1/agents 200 in 90ms
+ GET /projects/1/agents 200 in 70ms
+ ✓ Compiled /projects/[projectId]/agents in 62ms
+ GET /projects/1/agents 200 in 787ms
+ ✓ Compiled in 248ms
+ ✓ Compiled in 136ms
+ ✓ Compiled in 832ms
+ GET /projects/1/agents 200 in 605ms
+ ✓ Compiled /projects/[projectId]/features in 42ms
+ GET /projects/1/features 200 in 252ms
